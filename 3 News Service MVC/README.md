@@ -22,6 +22,12 @@ You can clone the repository and navigate to '3 News Service MVC' folder.
 
 Open a terminal in the '3 News Service MVC' folder and run:
 
+> **_NOTE:_** You may need to run npm install express before npm install:
+
+```
+npm install express
+```
+
 ```
 npm install
 ```

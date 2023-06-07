@@ -30,6 +30,12 @@ You can clone the repository and navigate to '4 News Service MVC with Sessions' 
 
 Open a terminal in the '4 News Service MVC with Sessions' folder and run:
 
+> **_NOTE:_** You may need to run npm install express before npm install:
+
+```
+npm install express
+```
+
 ```
 npm install
 ```

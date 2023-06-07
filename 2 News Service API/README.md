@@ -20,6 +20,12 @@ You can clone the repository and navigate to '2 News Service API' folder.
 
 Open a terminal in the '2 News Service API' folder and run:
 
+> **_NOTE:_** You may need to run npm install express before npm install:
+
+```
+npm install express
+```
+
 ```
 npm install
 ```
