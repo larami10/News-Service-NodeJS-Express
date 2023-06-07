@@ -1,8 +1,8 @@
-# News Service
+# News Service Command-Line Interface Application
 
-A simple News Service application featuring:
+A simple News Service application working with NodeJS, understanding the event loop, the file APIs, and Promises/Async-Await. This application features:
 
-1. Asynchronous File I/O with Promises and Async/Await functions.
+1. Asynchronous File I/O with Promises and Async-Await functions.
 2. Command-line interface featuring a menu-item selection on console.
 3. User can manipulate News.json objects based on command-line inputs:
    1. write a new News Story
