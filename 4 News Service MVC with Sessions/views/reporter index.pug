@@ -1,0 +1,28 @@
+html
+    head
+        title Simple HTTP Server
+        style
+            include ./styles.css
+    body
+        h2=welcome
+        a=a
+        - var hrefIndex=0
+        - var deleteButton=deleteButton
+        each val, index in array
+            if set[index]
+                span= 'Article ' + (index+1) + ': '
+                    a(href=href[hrefIndex]) #{val}
+                    form(action="deleteStory" method="post")
+                        if(deleteButton[index])
+                            input(class="delete-button" type="submit" value="Delete" name=index)
+                    - hrefIndex++;
+                    br
+            else
+                span= 'Article ' + (index+1) + ': ' + val
+                    br
+                    br
+        form(action='/getStoryInfo' method="get")
+            input(class="button" type="submit" value="Add A New Story")
+        br
+        br
+        a(href="./logout") Logout!

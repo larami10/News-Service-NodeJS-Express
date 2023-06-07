@@ -1,0 +1,40 @@
+html
+    head
+        title Simple HTTP Server
+        style
+            include ./styles.css
+    body
+        h2=welcome
+        form(action="newStory" method="post")
+            table(border="1" cols="2")
+                thead
+                    tr
+                        th Field Name
+                        th Field Value
+                tbody
+                    tr
+                        td What is the title of the new story:
+                        td
+                            input(type="text" name="title")
+                    tr
+                        td When was this story published:
+                        td
+                            input(type="date" id="date" name="date")
+                    tr
+                        td Select the subscription type:
+                        td
+                            select(id="type" name="type")
+                                option(value="T") Public (T)
+                                option(value="F") Private (F)
+                    tr
+                        td Please enter the content of the new story:
+                        td
+                            textarea(id="content" name="content" rows="5" cols="20")
+            br
+            input(class="button" type="submit" value="Add New Story")
+            br
+            br
+            a(href="./") Home
+            br
+            br
+            a(href="./logout") Logout!
