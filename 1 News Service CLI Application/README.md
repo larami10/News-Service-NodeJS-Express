@@ -1,4 +1,4 @@
-# News Service Command-Line Interface Application
+# News Service CLI Application
 
 A simple News Service application working with NodeJS, understanding the event loop, the file APIs, and Promises/Async-Await. This application features:
 
@@ -20,15 +20,11 @@ A simple News Service application working with NodeJS, understanding the event l
 
 ## How to use the Project
 
-You can clone the repository and:
-
-```
-cd News-Service
-```
+You can clone the repository and navigate to '1 News Service CLI Application' folder.
 
 ### To Run the Project
 
-Open a terminal in the News-Service folder and run:
+Open a terminal in the '1 News Service CLI Application' folder and run:
 
 ```
 node NewsService.js
