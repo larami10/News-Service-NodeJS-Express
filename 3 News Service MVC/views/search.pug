@@ -1,0 +1,23 @@
+html
+    head
+        title Simple HTTP Server
+        style
+            include ./styles.css
+    body
+        h2=welcome
+        form(action="searching" method="get")
+            table(border="1" cols="2")
+                thead
+                    tr
+                        th Field Name
+                        th Field Value
+                tbody
+                    tr
+                        td Enter a substring of a title, date range, or the name of an author to search:
+                        td
+                            input(type="text" name="search")
+            br
+            input(class="button" type="submit" value="Search")
+            br
+            br
+            a(href="./") Home

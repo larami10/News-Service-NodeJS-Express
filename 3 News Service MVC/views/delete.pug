@@ -1,0 +1,27 @@
+html
+    head
+        title Simple HTTP Server
+        style
+            include ./styles.css
+    body
+        h2=welcome
+        each val, index in array
+            span= 'Title ' + (index+1) + ': ' + val
+            br
+            br
+        form(action="deleteStory" method="post")
+            table(border="1" cols="2")
+                thead
+                    tr
+                        th Field Name
+                        th Field Value
+                tbody
+                    tr
+                        td Based on these titles, enter the number of the story you wish to delete:
+                        td
+                            input(type="text" name="delete")
+            br
+            input(class="delete-button" type="submit" value="Delete Story")
+            br
+            br
+            a(href="./") Home
