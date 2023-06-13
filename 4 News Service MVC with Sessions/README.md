@@ -51,3 +51,15 @@ Open a web browser with URL:
 ```
 localhost:3003
 ```
+
+The guest role will automatically start.
+
+To sign in as a subscriber, use:
+Username: Brandon
+Password: Subscriber
+Role: Subscriber
+
+To sign in as a reporter, use:
+Username: Igor
+Password: Reporter
+Role: Reporter
