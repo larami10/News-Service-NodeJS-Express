@@ -1,21 +1,31 @@
-# News Service
+# News Service CLI Application
 
-This repo contains 4 different projects for a fictional News Company web service. This project started as a CLI Application and was modified at each iteration ending with a Client-Server MVC using NodeJS/Express, Sessions, and Pug file templates for rendering HTML/CSS. Each project is similar with features of:
+A simple News Service application working with NodeJS, understanding the event loop, the file APIs, and Promises/Async-Await. This application features:
 
 1. Asynchronous File I/O with Promises and Async-Await functions.
-2. User can manipulate News.json objects based on user inputs for some/all of the following:
+2. Command-line interface featuring a menu-item selection on console.
+3. User can manipulate News.json objects based on command-line inputs:
    1. write a new News Story
    2. update a news story headline
    3. change the content of a news story
    4. delete a news story
    5. search for a news story
-3. Application checks and notifies user of invalid inputs.
+4. Application checks and notifies user of invalid inputs.
+5. Event emitters and listeners will:
+   1. create the logger.txt file if it does not already exist
+   2. log when the application starts/exits to the logger.txt file
+   3. log when a news story is created to the logger.txt file
+   4. log when a news story is deleted to the logger.txt file
+6. Timer events give the user 20 seconds to answer a prompt before redirecting user back to the main menu.
 
-The 4 types of projects that can be run are:
+## How to use the Project
 
-1. A CLI Application
-2. A Client-Server API
-3. A Client-Server MVC
-4. A Client-Server MVC with Sessions
+You can clone the repository and navigate to '1 News Service CLI Application' folder.
 
-with each folder having their unique README file on how to run the programs.
+### To Run the Project
+
+Open a terminal in the '1 News Service CLI Application' folder and run:
+
+```
+node NewsService.js
+```
