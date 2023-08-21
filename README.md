@@ -24,7 +24,7 @@ The News Service MVC has now been modified to work with 3 different roles where 
 
 ## How to use the Project
 
-You can clone the repository and navigate to '4 News Service MVC with Sessions' folder.
+You can clone the repository and:
 
 ### To Run Server
 
