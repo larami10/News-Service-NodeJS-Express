@@ -1,21 +1,65 @@
-# News Service
+# News Service MVC with Sessions
 
-This repo contains 4 different projects for a fictional News Company web service. This project started as a CLI Application and was modified at each iteration ending with a Client-Server MVC using NodeJS/Express, Sessions, and Pug file templates for rendering HTML/CSS. Each project is similar with features of:
+The News Service MVC has now been modified to work with 3 different roles where a client and server will communicate with the following features:
 
 1. Asynchronous File I/O with Promises and Async-Await functions.
-2. User can manipulate News.json objects based on user inputs for some/all of the following:
-   1. write a new News Story
-   2. update a news story headline
-   3. change the content of a news story
-   4. delete a news story
-   5. search for a news story
-3. Application checks and notifies user of invalid inputs.
+2. A Client web browser can connect to a server on port 3003.
+3. The start of the program will display an index page specific to a "Guest" role.
+4. The "Guest" role can:
+   1. only view articles that are listed as "Public (T)"
+   2. can login
+5. In the login page, the Client can login as:
+   1. "Subscriber" allowing the Client to:
+      1. view all "Public (T)" and "Private (F)" articles
+      2. logout, view a list of their activity, and destroy their session
+   2. "Reporter" allowing the Client to:
+      1. view all "Public (T)" articles and articles authored by the Client
+      2. manipulate News.json objects based on button inputs:
+         1. Add a New Story
+         2. Delete a News Story
+            1. The "Delete" button will only be displayed for articles authored by the Client
+6. Once a "Subscriber" or "Reporter" has logged in, a session with a 10 minute expiration will be created.
+7. Server checks and notifies Client of invalid inputs with appropriate status codes.
+8. All web pages are displayed based on Client input using .pug files and minor css.
 
-The 4 types of projects that can be run are:
+## How to use the Project
 
-1. A CLI Application
-2. A Client-Server API
-3. A Client-Server MVC
-4. A Client-Server MVC with Sessions
+You can clone the repository and navigate to '4 News Service MVC with Sessions' folder.
 
-with each folder having their unique README file on how to run the programs.
+### To Run Server
+
+Open a terminal and run:
+
+> **_NOTE:_** You may need to run npm install express before npm install:
+
+```
+npm install express
+```
+
+```
+npm install
+```
+
+```
+node NewsServiceMVC.js
+```
+
+### To Run Client
+
+Open a web browser with URL:
+
+```
+localhost:3003
+```
+
+The guest role will automatically start.
+
+To sign in as a subscriber, use:
+Username: Brandon
+Password: Subscriber
+Role: Subscriber
+
+To sign in as a reporter, use:
+Username: Igor
+Password: Reporter
+Role: Reporter
